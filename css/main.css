@@ -9,6 +9,17 @@ body {
   background-color: #34ebc9;
 }
 
+memory-game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    border: 2px solid black;
+}
+
+memory-card {
+    border: 2px solid pink;
+}
+
 img {
     width: 100px;
 }
