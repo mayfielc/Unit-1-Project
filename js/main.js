@@ -1,9 +1,9 @@
-//state
+//global variables
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-
+//functions for card flips
 function flipCard() {
     this.classList.toggle('flip');
     if(!hasFlippedCard) {
@@ -13,7 +13,12 @@ function flipCard() {
         hasFlippedCard = false;
         secondCard = this;
 
-        console.log([firstCard, secondCard]);
+    // cards match?
+    if (firstCard.dataset.name === secondCard.dataset.name) {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+    }
+        console.log('function was excuted!')
     }
 }
 
