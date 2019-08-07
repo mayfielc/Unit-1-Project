@@ -4,6 +4,7 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 
 
+
 function flipCard() {
     this.classList.toggle('flip');
     if(!hasFlippedCard) {
