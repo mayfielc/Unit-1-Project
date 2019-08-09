@@ -4,7 +4,11 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+
 //functions for card flips
+
+
+
 function flipCard() {
     if( lockBoard) return;
     if (this === firstCard) return;
@@ -59,7 +63,14 @@ function resetBoard() {
         cards.forEach(card => {
             let randomPos = Math.floor(Math.random() * 12);
             card.style.order = randomPos;
+            
         });
+
     })();
+
+    let x = document.getElementById("sammi");
+    function playAudio() {
+    x.play();
+    }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
