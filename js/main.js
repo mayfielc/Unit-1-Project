@@ -1,3 +1,4 @@
+
 //global variables
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
@@ -7,10 +8,9 @@ let firstCard, secondCard;
 
 //functions for card flips
 
-
-
 function flipCard() {
     if( lockBoard) return;
+    
     if (this === firstCard) return;
 
     this.classList.toggle('flip');
@@ -29,6 +29,7 @@ function flipCard() {
 }
 
     // cards match || no match
+    //Tern oper
     function checkForMatch() {
       let matchPair = firstCard.dataset.name === secondCard.dataset.name;
 
@@ -41,6 +42,7 @@ function disableCards() {
 
         resetBoard();
 }
+
 
 function unflipCards() {
     lockBoard = true;
@@ -71,6 +73,9 @@ function resetBoard() {
     let x = document.getElementById("sammi");
     function playAudio() {
     x.play();
+    }
+    function pauseAudio() { 
+        x.pause();
     }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
