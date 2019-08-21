@@ -1,6 +1,5 @@
 #Here's Your Chicken Dinner!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-![game cover](file:///Users/mayfielc/projects/Unit1-Project/index.html)
 
 How to play
 _____
